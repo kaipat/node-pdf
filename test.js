@@ -7,13 +7,13 @@ const pdf = new TablePDF({
   rowConfig: [ 
     { width: "40", key: "_index_", title: "序号", justify: "center" },
     { width: "*", key: "pron", title: "Pron", justify: "center" },
-    { width: "*", key: "spell", title: "Spell", justify: "center" },
-    { width: "***", key: "excerpt", title: "Excerpt", justify: "center" },
-    { width: "46", title: "日期1", justify: "center" },
-    { width: "46", title: "日期2", justify: "center" },
-    { width: "46", title: "日期3", justify: "center" },
-    { width: "46", title: "日期4", justify: "center" },
-    { width: "46", title: "日期5", justify: "center" }
+    { width: "**", key: "spell", title: "Spell", justify: "center" },
+    { width: "**", key: "excerpt", title: "Excerpt", justify: "center" },
+    { width: "36", title: "D1", justify: "center" },
+    { width: "36", title: "D2", justify: "center" },
+    { width: "36", title: "D3", justify: "center" },
+    { width: "36", title: "D4", justify: "center" },
+    { width: "36", title: "D5", justify: "center" }
   ]
 });
 
