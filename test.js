@@ -8,8 +8,8 @@ new TablePDF({
   rowConfig: [
     { width: "34", key: "_index_", title: "序号" },
     { width: "*", key: "pron", title: "Pron" },
-    { width: "**", key: "spell", title: "Spell" },
-    { width: "**", key: "excerpt", title: "Excerpt" },
+    { width: "*", key: "spell", title: "Spell" },
+    { width: "***", key: "excerpt", title: "Excerpt" },
     { width: "30", title: "D1" },
     { width: "30", title: "D2" },
     { width: "30", title: "D3" },
