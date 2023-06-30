@@ -4,6 +4,7 @@ const TablePDF = require("./lib/tablePDF");
 
 const pdf = new TablePDF({
   rows: require("./data.js").slice(0),
+  title: "いましめる @Jeni",
   rowConfig: [ 
     { width: "34", key: "_index_", title: "序号" },
     { width: "*", key: "pron", title: "Pron" },
