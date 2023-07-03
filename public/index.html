@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/output" method="post">
+    <fieldset>
+      <legend>导出设置:</legend>
+      <label><input type="checkbox" name="setting[]" value="_index_">序号</label>
+      <label><input type="checkbox" name="setting[]" value="pron">Pron</label>
+      <label><input type="checkbox" name="setting[]" value="spell">Spell</label>
+      <label><input type="checkbox" name="setting[]" value="excerpt">Excerpt</label>
+      <label><input type="checkbox" name="setting[]" value="_date_">日期</label>
+      <button type="submit">导 出</button>
+    </fieldset>
+  </form>
+</body>
+</html>
