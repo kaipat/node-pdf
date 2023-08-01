@@ -1,4 +1,5 @@
 module.exports = [
+  { "excerpt": "[名詞] 期间；期限。（期限・日限。）", "spell": "期間", "accent": "①②", "pron": "きかん", "romaji": "kikan", "createdAt": "2019-05-07T03:48:35.146Z", "updatedAt": "2023-07-05T21:19:39.777Z", "updatedBy": "9r8XOy1RcF", "converted": true, "tags": "N2#N3#高考", "isFree": true, "contentUpdatedAt": { "__type": "Date", "iso": "2022-07-06T02:36:09.433Z" }, "vTag": 1, "outSharedNum": 2, "quality": 1000, "viewedNum": 4975, "objectId": "198942157" },
   {
     "_id": "1989101534",
     "excerpt": "[自動詞] 知道。清楚。（明らかにする。） 理解。懂得。（事の筋道がはっきりする。） 通情达理。通晓",
