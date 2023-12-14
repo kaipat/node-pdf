@@ -24,11 +24,12 @@ router.post("/output", ctx => {
       { width: "*", key: "pron", title: "Pron" },
       { width: "*", key: "spell", title: "Spell" },
       { width: "***", key: "excerpt", title: "Excerpt" },
-      { width: "30", title: "D1", key: "_date_", justify: "center" },
-      { width: "30", title: "D2", key: "_date_", justify: "center" },
-      { width: "30", title: "D3", key: "_date_", justify: "center" },
-      { width: "30", title: "D4", key: "_date_", justify: "center" },
-      { width: "30", title: "D5", key: "_date_", justify: "center" }
+      { width: "30", key: "_date_", title: "D1", justify: "center" },
+      { width: "30", key: "_date_", title: "D2", justify: "center" },
+      { width: "30", key: "_date_", title: "D3", justify: "center" },
+      { width: "30", key: "_date_", title: "D4", justify: "center" },
+      { width: "30", key: "_date_", title: "D5", justify: "center" },
+      { width: "***", key: "_note_", title: "笔记", justify: "center" }
     ].filter(cell => setting.includes(cell.key))
   });
   ctx.body = pdf.stream();
