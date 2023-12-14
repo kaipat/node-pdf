@@ -1,5 +1,3 @@
-.PHONY: build
-
 APP=node-pdf
 
 serve:
