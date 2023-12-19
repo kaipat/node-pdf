@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "nodemon test.js",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "devDependencies": {
     "@kaipat/eslint-config-basic": "^0.0.6",

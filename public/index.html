@@ -6,17 +6,44 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    label {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <form action="/output" method="post">
     <fieldset>
       <legend>导出设置:</legend>
-      <label><input type="checkbox" name="setting[]" value="_index_">序号</label>
-      <label><input type="checkbox" name="setting[]" value="pron">Pron</label>
-      <label><input type="checkbox" name="setting[]" value="spell">Spell</label>
-      <label><input type="checkbox" name="setting[]" value="excerpt">Excerpt</label>
-      <label><input type="checkbox" name="setting[]" value="_date_">日期</label>
-      <label><input type="checkbox" name="setting[]" value="_note_">笔记</label>
+      <label>
+        <span>序号</span>
+        <input type="checkbox" name="setting._index_" value="true">
+      </label>
+      <label>
+        <span>Pron</span>
+        <input type="checkbox" name="setting.pron" value="true">
+      </label>
+      <label>
+        <span>Spell</span>
+        <input type="checkbox" name="setting.spell" value="true">
+      </label>
+      <label>
+        <span>Excerpt</span>
+        <input type="checkbox" name="setting.excerpt" value="true">
+      </label>
+      <label>
+        <span>日期</span>
+        <input type="checkbox" name="setting._date_" value="true">
+      </label>
+      <label>
+        <span>笔记</span>
+        <input type="checkbox" name="setting._note_" value="true">
+      </label>
+      <label>
+        <span>背景色</span>
+        <input type="color" name="setting.backgroundColor" value="#ffffff">
+      </label>
       <button type="submit">导 出</button>
     </fieldset>
   </form>

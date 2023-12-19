@@ -15,7 +15,10 @@ const pdf1 = new TablePDF({
     { width: "30", key: "_date_", title: "D3", justify: "center" },
     { width: "30", key: "_date_", title: "D4", justify: "center" },
     { width: "30", key: "_date_", title: "D5", justify: "center" }
-  ]
+  ],
+  pageConfig: {
+    backgroundColor: "#94a3b8"
+  }
 });
 pdf1.file(path.resolve(__dirname, "./public/output-1.pdf"));
 
@@ -25,7 +28,10 @@ pdf2 = new TablePDF({
   rowConfig: [
     { width: "*", key: "spell", title: "Spell" },
     { width: "***", key: "excerpt", title: "Excerpt" }
-  ]
+  ],
+  pageConfig: {
+    backgroundColor: "#e2e8f0"
+  }
 });
 pdf2.pipeline(fs.createWriteStream(path.resolve(__dirname, "./public/output-2.pdf")));
 

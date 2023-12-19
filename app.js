@@ -13,8 +13,8 @@ router.post("/output", ctx => {
   ctx.set("Content-Type", "application/pdf");
   ctx.set("Content-Disposition", "attachment; filename=output.pdf");
 
-  const setting = ctx.request.body.setting || [];
-  console.log(setting);
+  const setting = ctx.request.body.setting || {};
+  const props = Object.keys(setting).filter(key => setting[key] === "true");
 
   const pdf = new TablePDF({
     rows: fakeData,
@@ -30,7 +30,10 @@ router.post("/output", ctx => {
       { width: "30", key: "_date_", title: "D4", justify: "center" },
       { width: "30", key: "_date_", title: "D5", justify: "center" },
       { width: "***", key: "_note_", title: "笔记", justify: "center" }
-    ].filter(cell => setting.includes(cell.key))
+    ].filter(cell => props.includes(cell.key)),
+    pageConfig: {
+      backgroundColor: setting.backgroundColor
+    }
   });
   ctx.body = pdf.stream();
 });
