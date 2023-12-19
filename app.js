@@ -33,6 +33,12 @@ router.post("/output", ctx => {
     ].filter(cell => props.includes(cell.key)),
     pageConfig: {
       backgroundColor: setting.backgroundColor
+    },
+    cellConfig: {
+      backgroundColor: ["#ffffff", setting.cellBackgroundColor]
+    },
+    headerConfig: {
+      backgroundColor: setting.headerBackgroundColor
     }
   });
   ctx.body = pdf.stream();

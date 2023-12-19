@@ -18,6 +18,9 @@ const pdf1 = new TablePDF({
   ],
   pageConfig: {
     backgroundColor: "#94a3b8"
+  },
+  cellConfig: {
+    backgroundColor: ["#ffffff", "#D8D8D8", "#fca5a5"]
   }
 });
 pdf1.file(path.resolve(__dirname, "./public/output-1.pdf"));
