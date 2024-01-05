@@ -21,15 +21,18 @@ router.post("/output", ctx => {
     title: "いましめる @Jeni",
     rowConfig: [
       { width: "34", key: "_index_", title: "序号", justify: "center" },
-      { width: "*", key: "pron", title: "Pron" },
-      { width: "*", key: "spell", title: "Spell" },
-      { width: "***", key: "excerpt", title: "Excerpt" },
+      { width: "*", key: "spell", title: "单词" },
+      { width: "*", key: "pron", title: "发音" },
+      { width: "**", key: "cixing", title: "词性" },
+      { width: "**", key: "definitionCN", title: "中文释义" },
+      { width: "**", key: "definitionEN", title: "日语释义" },
+      { width: "***", key: "note", title: "笔记" },
+      { width: "***", key: "_note_", title: "笔记空间", justify: "center" },
       { width: "30", key: "_date_", title: "D1", justify: "center" },
       { width: "30", key: "_date_", title: "D2", justify: "center" },
       { width: "30", key: "_date_", title: "D3", justify: "center" },
       { width: "30", key: "_date_", title: "D4", justify: "center" },
-      { width: "30", key: "_date_", title: "D5", justify: "center" },
-      { width: "***", key: "_note_", title: "笔记", justify: "center" }
+      { width: "30", key: "_date_", title: "D5", justify: "center" }
     ].filter(cell => props.includes(cell.key)),
     pageConfig: {
       backgroundColor: setting.backgroundColor
